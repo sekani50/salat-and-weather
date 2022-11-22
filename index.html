@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Daily Prayer Time</title>
+    <link rel="stylesheet" href="timestyle.css" />
+    <script src="https://kit.fontawesome.com/ea3f4b4992.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Exo|Acme">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+    <div id="first-box" class="form-box">
+        <img src="https://htmldemo.net/azan/img/logo-white.png" />
+        <form name="form1" id="city-input">
+            <input type="text" id="input" name="getcity" placeholder="Enter your current city name" />
+            <button id="btn" name="submit">Submit</button>
+        </form>
+
+    </div>
+
+
+
+    <div id="second-box" style="display:none">
+
+        <p id="back-one" class="back-window"><i class="fa-solid fa-bars"></i></p>
+
+
+        <div id="minibox">
+            <p id="weather">18&#176; </p>
+
+            <div id="name-date">
+                <p id="city-name">Nigeria</p>
+                <p id="date">24th November 2020</p>
+
+            </div>
+            <p id="weath-condn">Partly Cloudy</p>
+        </div>
+
+        <h4 id="date-display"><span class="live-time" id="hrs">00</span><span class="live-time" id="min">00</span><span class="live-time" id="sec">00</span><span class="live-time" id="ampm">AM</span></h4>
+
+        <div id="solat-box">
+            <div class="header-box">
+                <p class="solat-header">Today's Prayer Time</p>
+
+
+            </div>
+
+
+            <div id="solats">
+
+                <div class="sb" id="fajr-box">
+                    <i class="fa-regular fa-bell"></i>
+                    <div id="sb-main">
+                        <p>Fajr</p>
+                        <p id="fajr">00:00 AM</p>
+
+                    </div>
+
+                </div>
+
+                <div class="sb" id="sunrise-box">
+                    <i class="fa-regular fa-bell"></i>
+                    <div id="sb-main">
+                        <p>Sunrise</p>
+                        <p id="sunrise">00:00 AM</p>
+                    </div>
+
+                </div>
+
+                <div class="sb" id="dhuhr-box">
+                    <i class="fa-regular fa-bell"></i>
+                    <div id="sb-main">
+                        <p>Dhuhr</p>
+                        <p id="dhuhr">00:00 AM</p>
+                    </div>
+
+                </div>
+
+                <div class="sb" id="asr-box">
+                    <i class="fa-regular fa-bell"></i>
+                    <div id="sb-main">
+                        <p>Asr</p>
+                        <p id="asr">00:00 AM</p>
+                    </div>
+
+                </div>
+
+                <div class="sb" id="maghrib-box">
+                    <i class="fa-regular fa-bell"></i>
+                    <div id="sb-main">
+                        <p>Maghrib</p>
+                        <p id="maghrib">00:00 AM</p>
+                    </div>
+
+                </div>
+
+                <div class="sb" id="isha-box">
+                    <i class="fa-regular fa-bell"></i>
+                    <div id="sb-main">
+                        <p>Isha</p>
+                        <p id="isha">00:00 AM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button id="back-two" class="back-phone">Back</button>
+
+
+    </div>
+
+    <footer>
+    </footer>
+
+
+    <script src="time.js" type="module"></script>
+</body>
+</html>

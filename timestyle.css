@@ -1,0 +1,396 @@
+﻿@media only screen and (max-width:700px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    body .form-box {
+        width: 80%;
+        position: relative;
+        margin-top: 13em;
+    }
+
+    body .form-box img {
+        width: 15%;
+        height: 10%;
+        margin-top: 5em;
+    }
+
+    body .form-box #city-input #input {
+        width: 95%;
+        margin-top: 2em;
+        color: black;
+    }
+
+    body .form-box #city-input #btn {
+        width: 95%;
+        color: lightgrey;
+    }
+}
+
+@media (max-width:930px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    body #second-box {
+        display: block;
+        width: 98%;
+        height: 98%;
+    }
+
+    body #second-box #minibox {
+        position: revert;
+        width: 100%;
+        height: 10%;
+        justify-content: center;
+    }
+
+    body #second-box #minibox #weather {
+        margin-top: 1px;
+        font-size: 4em;
+        font-weight: 300;
+        margin-right: 20px;
+    }
+
+    body #second-box #minibox #name-date {
+        margin-right: 15px;
+        margin-top: -60px;
+    }
+
+    body #second-box #minibox #name-date #city-name {
+        font-size: 30px;
+    }
+
+    body #second-box #minibox #name-date #date {
+        margin-top: 3%;
+        font-size: 9px;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    body #second-box #minibox #weath-condn {
+        margin-top: 40px;
+        margin-left: 5px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    body #second-box #date-display {
+        text-align: center;
+        width: 100%;
+        margin: 4em 0px 0px 0px;
+    }
+
+    body #second-box #date-display .live-time {
+        font-size: 20px;
+        padding: 3px
+    }
+
+    body #second-box #solat-box {
+        width: 100%;
+        height: 60%;
+        margin-top: 30px;
+    }
+
+    body #second-box #solat-box #solats .sb {
+        border-radius: 6%;
+    }
+
+    body #second-box #solat-box #solats .active {
+        border-radius: 6%;
+    }
+
+    body #second-box .back-window {
+        display: none;
+    }
+
+    body #second-box .back-phone {
+        display: block;
+        background: none;
+        width: 65px;
+        opacity: 0.7;
+        cursor: pointer;
+        color: whitesmoke;
+        padding: 2%;
+        border-radius: 20%;
+        text-align: center;
+        margin: 2% auto;
+        font-weight: 600;
+        border: 1px solid whitesmoke;
+        background: rgba(224,224,224,0.2);
+ }
+
+    body #second-box .back-phone:hover {
+        opacity: 1;
+    }
+}
+
+html, body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('https://i0.wp.com/www.prayerinislam.com/wp-content/uploads/2014/05/shutterstock_131816702.jpg');
+    background-color: grey;
+    background-blend-mode: multiply;
+    font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+}
+
+    html, body::after,
+    html, body::before {
+        box-sizing: border-box;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-box {
+    width: 30%;
+    height: 70%;
+    margin: 12em auto;
+    text-align: center;
+    transition: height 1s, width 1s;
+}
+
+    .form-box img {
+        width: 15%;
+        height: 15%;
+        margin: auto;
+    }
+
+    .form-box #city-input {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-box #city-input #input {
+        width: 70%;
+        margin-bottom: 7%;
+        margin-top: 10%;
+        height: 40px;
+        font-size:17px;
+        text-align: center;
+        opacity: 0.4;
+        border-radius: 40px;
+        border: none;
+        background: #FFFAF0;
+        color: black;
+        font-weight: 600;
+    }
+
+    .form-box #city-input #input:focus {
+        outline: none;
+    }
+
+    .form-box #city-input #btn {
+        width: 70%;
+        background-color: black;
+        height: 40px;
+        font-weight: 600;
+        color: #FFFAF0;
+        border-radius: 40px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+    }
+
+/*//////////////////////*/
+#second-box {
+    display: flex;
+    position: relative;
+    width: 95%;
+    height: 95%;
+    color: whitesmoke;
+    margin: 1em auto;
+    transition: height 1s, width 1s;
+}
+
+    /*///////time*/
+    #second-box #date-display {
+        margin: 15em auto;
+    }
+
+        #second-box #date-display .live-time {
+            background: rgba(128,128,128,0.3);
+            margin-right: 5px;
+            font-size: 30px;
+            font-weight: 100;
+            padding: 4px;
+            border: 1px solid grey;
+        }
+
+            #second-box #date-display .live-time:hover {
+                border: 1px solid whitesmoke;
+            }
+    /*//////minibox///////*/
+    #second-box #minibox {
+        position: absolute;
+        bottom: -2.9em;
+        width: 50%;
+        height: 45%;
+        display: flex;
+    }
+
+#minibox #weather {
+    margin-top: 74px;
+    font-size: 7em;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+#minibox #name-date {
+    margin-right: 25px;
+}
+
+    #minibox #name-date #city-name {
+        font-size: 50px;
+        margin-top: 90px;
+    }
+
+    #minibox #name-date #date {
+        margin-top: 3%;
+        font-size: 11px;
+        font-weight: 200;
+        text-align: center;
+    }
+
+#minibox #weath-condn {
+    margin-top: 130px;
+    margin-left: 8px;
+    font-size: 30px;
+}
+/*/////solat*/
+#second-box #solat-box {
+    width: 40%;
+    height: 100%;
+    background: rgba(96,96,96,0.3);
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+    #second-box #solat-box:hover {
+        border: 1px solid whitesmoke;
+    }
+
+    #second-box #solat-box .header-box {
+        width: 100%;
+        padding: 7px;
+        border-bottom: 1px solid grey;
+        text-align: center;
+    }
+
+    #second-box #solat-box .header-box:hover {
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    #second-box #solat-box .header-box .solat-header {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 100;
+    }
+
+    #second-box #solat-box #solats {
+        width: 100%;
+        margin-top: 4em;
+        padding: 6px;
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #second-box #solat-box #solats .sb {
+        width: 30%;
+        height: 40%;
+        margin-right: 10px;
+        position: relative;
+        border: 1px solid grey;
+        border-radius: 5%;
+        cursor: pointer;
+        background: rgba(224,224,224,0.7);
+    }
+
+    #second-box #solat-box #solats .sb:hover {
+        border: 1px solid whitesmoke;
+    }
+
+    #second-box #solat-box #solats .sb #sb-main {
+        color: dimgrey;
+        font-weight: 600;
+        position: absolute;
+        left: 10%;
+        bottom: 5%;
+    }
+
+    #second-box #solat-box #solats .sb i {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: dimgrey;
+    }
+
+    #second-box #solat-box #solats .active i {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: rgb(51,51,255);
+    }
+
+    #second-box #solat-box #solats .active #sb-main {
+        color: black;
+        font-weight: 600;
+        position: absolute;
+        left: 10%;
+        bottom: 5%;
+    }
+
+    #second-box #solat-box #solats .active {
+        width: 30%;
+        height: 40%;
+        cursor: pointer;
+        margin-right: 10px;
+        position: relative;
+        border: 1px solid grey;
+        border-radius: 5%;
+        background: rgba(225,225,225,1);
+        color: black;
+    }
+
+body .back-window {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    background: rgba(224,224,224,0.2);
+    font-weight: 100;
+    padding: 1%;
+    border: 1px solid grey;
+    opacity: 0.5;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+    body .back-window:hover {
+        opacity: 1;
+        border: 1px solid whitesmoke;
+    }
+
+#second-box .back-phone {
+    display: none;
+}
