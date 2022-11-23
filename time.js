@@ -497,7 +497,7 @@ function changeActiveDemo(i) {
         new Promise((resolve, reject) => {
             i++;
             document.getElementById("fajr-box").classList.remove("active");
-            document.body.style.background = "url('https://i0.wp.com/www.prayerinislam.com/wp-content/uploads/2014/05/shutterstock_131816702.jpg')";
+            //document.body.style.background = "url('https://i0.wp.com/www.prayerinislam.com/wp-content/uploads/2014/05/shutterstock_131816702.jpg')";
             document.getElementById("maghrib-box").classList.remove("active");
             document.getElementById("isha-box").classList.add("active");
             setTimeout(() => {
@@ -536,7 +536,7 @@ function changeActiveDemo(i) {
         let curSave = currentTime;
         new Promise((resolve, reject) => {
             i++;
-            document.body.style.background = "url('https://i0.wp.com/www.prayerinislam.com/wp-content/uploads/2014/05/shutterstock_131816702.jpg')";
+            //document.body.style.background = "url('https://i0.wp.com/www.prayerinislam.com/wp-content/uploads/2014/05/shutterstock_131816702.jpg')";
 
             document.getElementById("fajr-box").classList.remove("active");
 
