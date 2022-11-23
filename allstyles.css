@@ -254,7 +254,7 @@ html, body {
     }
 
 #minibox #weather {
-    margin-top: 1em;
+    margin-top: 0.5em;
     font-size: 7em;
     font-weight: 300;
     margin-right: 20px;
@@ -262,7 +262,7 @@ html, body {
 
 #minibox #name-date {
     margin-right: 25px;
-    margin-top: 150px;
+    margin-top: 90px;
 }
 
     #minibox #name-date #city-name {
@@ -277,7 +277,7 @@ html, body {
     }
 
 #minibox .icon-desc {
-    margin-top: 150px;
+    margin-top: 90px;
     margin-left: 8px;
     font-size: 30px;
     text-align: center;
