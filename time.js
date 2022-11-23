@@ -124,12 +124,14 @@ function displaySolatTime() {
     let day = dt.getDate();
     let year = dt.getFullYear();
     console.log(dt.toLocaleDateString("en-US", { weekday: "long" }));
-
+    
     document.getElementById("date").innerText = day + ", " + month + " " + year;
     document.getElementById("city-name").innerText = solatTime.cityName;
-    document.getElementById("weather").innerHTML = solatTime.temp.toPrecision(2) + "&#176;"
-    document.getElementById("weath-condn").innerText = solatTime.weather;
-    //console.log(solatTime.temp.toPrecision(2));
+    document.getElementById("weather").innerHTML = solatTime.temp.toPrecision(2) +"&#176;"
+    document.getElementById("weath-condn").innerText = solatTime.condText;
+    document.getElementById("icon").src = solatTime.condIcon;
+
+  
 
     if (solatTime.asr.substring(0, 2) > 12) {
 
