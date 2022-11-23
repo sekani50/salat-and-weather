@@ -37,21 +37,12 @@ document.getElementById("btn").addEventListener('click', (event) => {
 
     document.getElementById("input").value = "";
 
-
-
-
-
-
 })
 
 const dailyObject = {
 
     tweak: {}
 };
-
-
-
-
 
 function fetchData(city) {
 
@@ -93,43 +84,25 @@ function fetchData(city) {
 
             let lat = dailyTiming.meta.latitude;
             let long = dailyTiming.meta.longitude;
-
-            //hijri
-            /*
-            let wkday = dailyTiming.hijri.weekday.en;
-            let mnth = dailyTiming.hijri.month.en;
-            let yr = dailyTiming.hijri.year;
-            */
-
-
-
-
-
-
+        
             const options = {
-                method: 'GET',
-                headers: {
-                    'X-RapidAPI-Key': '6a7b47a272msh2eec2939397a38dp1dbce0jsnbbada6ef87f6',
-                    'X-RapidAPI-Host': 'weatherbit-v1-mashape.p.rapidapi.com'
-                }
-            };
+                        method: 'GET',
+                        headers: {
+                            'X-RapidAPI-Key': 'f358ba1e39msh66d1a491f35dc02p1265f4jsn9b739af931d2',
+                            'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+                        }
+                    };
+
+                    return fetch("https://weatherapi-com.p.rapidapi.com/current.json?q=%3C"+city+"%3E", options)
+
+                        .then(resp => resp.json())
+                        .then(response => {
+                            solatTime.temp = response.current.temp_c;
+                            solatTime.condIcon = response.current.condition.icon;
+                            solatTime.condText = response.current.condition.text;
 
 
-            return fetch("https://weatherbit-v1-mashape.p.rapidapi.com/current?lon=" + long + "&lat=" + lat + "", options)
-
-                .then(resp => resp.json())
-                .then(data => {
-                    const weatherArray = data.data;
-
-                    weatherArray.forEach((value) => {
-                        solatTime.temp = value.temp;
-                        solatTime.weather = value.weather.description;
-                        console.log(value.weather.description);
-                    })
-
-
-
-                })
+                        })
 
         })
 
@@ -604,8 +577,6 @@ function changeActiveDemo(i) {
         i = 0;
         changeActiveDemo(i);
     }
-
-
 
 }
 
